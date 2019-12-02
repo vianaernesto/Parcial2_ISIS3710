@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import * as d3 from 'd3';
 class Grafica extends Component {
 
+    state={
+        data :this.props.data
+    }
     render() {
         return (
             <div>
@@ -12,8 +15,7 @@ class Grafica extends Component {
     }
 
     componentDidMount(){
-        console.log(this.props);
-        const data = this.props.data;
+        const data = this.state.data
         this.drawChart(data);
     }
 
