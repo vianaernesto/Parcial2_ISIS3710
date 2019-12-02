@@ -12,11 +12,13 @@ class Grafica extends Component {
     }
 
     componentDidMount(){
-        const data = this.props.movies
+        console.log(this.props);
+        const data = this.props.data;
         this.drawChart(data);
     }
 
     drawChart(data){
+        console.log(data);
         const svg = d3.select(this.refs.canvas)
         const width = 700;
         const height = 500;

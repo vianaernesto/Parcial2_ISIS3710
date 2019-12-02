@@ -51,7 +51,7 @@ class Movies extends Component {
                 </div>
             </div>
             <div className="row">
-                <Grafica movies= {this.state.movies}/>
+                <Grafica data= {this.state.movies}/>
             </div>
             </div>
         );
